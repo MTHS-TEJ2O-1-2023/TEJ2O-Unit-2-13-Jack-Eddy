@@ -27,6 +27,7 @@ input.onButtonPressed(Button.A, function () {
   neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
   neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Green))
   countdown = 4
+  // true loop
   while (countdown >= 0) {
     basic.pause(500)
     basic.showNumber(countdown)
@@ -35,5 +36,6 @@ input.onButtonPressed(Button.A, function () {
     neopixelStrip.setPixelColor(neopixelAmount, neopixel.colors(NeoPixelColors.Black))
     neopixelAmount = neopixelAmount + 1
   }
+  // false loop
   basic.showIcon(IconNames.Happy)
 })
