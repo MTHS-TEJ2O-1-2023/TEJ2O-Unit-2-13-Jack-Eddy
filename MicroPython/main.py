@@ -29,9 +29,13 @@ if button_a.is_pressed():
     np[2] = (0, 1, 0)
     np[3] = (0, 1, 0)
     # true loop
-    while (countdown >= 0):
+    while countdown >= 0:
         sleep(500)
         display.show(countdown)
         np.show()
         countdown = countdown - 1
-        np[ne] = (0, 0, 0)
+        np[neopixel_number] = (0, 0, 0)
+        neopixel_number = neopixel_number + 1
+        # end loop
+    else:
+        display.show(Image.HAPPY)
