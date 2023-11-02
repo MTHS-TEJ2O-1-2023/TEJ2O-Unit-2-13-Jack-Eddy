@@ -5,7 +5,7 @@
  * This program counts down from 4 using a loop
 */
 
-// varriables
+// variables
 let neopixelStrip: neopixel.Strip = null
 let countdown: number = 4
 let neopixelAmount: number = 0
