@@ -12,7 +12,7 @@ let neopixelNumber: number = 0
 
 // cleanup
 basic.clearScreen()
-neopixelStrip = neopixel.create(DigitalPin.P0, 4, NeoPixelMode.RGB)
+neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
 neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -36,6 +36,6 @@ input.onButtonPressed(Button.A, function () {
     neopixelStrip.setPixelColor(neopixelNumber, neopixel.colors(NeoPixelColors.Black))
     neopixelNumber = neopixelNumber + 1
   }
-  // false loop
+  // end of loop
   basic.showIcon(IconNames.Happy)
 })
