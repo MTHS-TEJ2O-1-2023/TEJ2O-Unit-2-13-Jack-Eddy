@@ -19,7 +19,7 @@ neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.show()
 
-input.onButtonPressed(Button.A, function () {
+input.onButtonPressed(Button.A, function() {
   // setup
   basic.clearScreen()
   neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
