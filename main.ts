@@ -1,7 +1,7 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
  * Created by: Jack Eddy
- * Created on: Nov 2023 
+ * Created on: Nov 2023
  * This program counts down from 4 using a loop
 */
 
@@ -19,7 +19,7 @@ neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.show()
 
-input.onButtonPressed(Button.A, function() {
+input.onButtonPressed(Button.A, function () {
   // setup
   basic.clearScreen()
   neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
