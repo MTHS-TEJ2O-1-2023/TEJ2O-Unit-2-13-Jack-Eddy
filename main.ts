@@ -1,7 +1,7 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
  * Created by: Jack Eddy
- * Created on: Oct 2023
+ * Created on: Nov 2023 
  * This program counts down from 4 using a loop
 */
 
@@ -26,6 +26,7 @@ input.onButtonPressed(Button.A, function() {
   neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
   neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
   neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Green))
+  neopixelNumber = 0
   countdown = 4
   // true loop
   while (countdown >= 0) {
